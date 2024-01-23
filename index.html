@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,102 @@
     <title>Hockey</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5b86fcd3d0.js" crossorigin="anonymous"></script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .font-Manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 
 </head>
 
-<body>
+<body class="font-Manrope">
+    <header>
+        <nav class="container mx-auto lg:px-20 px-5 py-5">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl lg:text-4xl">Hockey<span class="text-red-500">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li><a class="text-red-500 ">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <img src="Images/search.png" alt="">
+                    <a class="btn btn-primary bg-red-600 border-0 text-white text-xs lg:text-xl">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container mx-auto lg:px-20 px-5 py-5">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-black border-0 text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black border-0 text-white">❯</a>
+                    </div>
+                    <div class="lg:absolute lg:w-4/12 lg:text-left bg-black text-white rounded-lg  p-3 right-4 bottom-4">
+                        <h4 class="text-xl font-extrabold pb-2">Meet all the heroes from the field</h4>
+                        <p class="text-xs font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                            in sit nullam proin. </p>
+                    </div>
+
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-black border-0 text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black border-0 text-white">❯</a>
+                    </div>
+                    <div class="lg:absolute lg:w-4/12 lg:text-left bg-black text-white rounded-lg  p-3 right-4 bottom-4">
+                        <h4 class="text-xl font-extrabold pb-2">Meet all the heroes from the field</h4>
+                        <p class="text-xs font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                            in sit nullam proin. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:hidden  text-left bg-black text-white rounded-lg  p-3">
+                <h4 class="text-xs font-extrabold">Meet all the heroes from the field</h4>
+                <p class="text-xs font-medium">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                    in sit nullam proin. </p>
+            </div>
+        </div>
+
+    </header>
+    <main>
+       
+
+    </main>
+    <footer>
+
+    </footer>
 
 </body>
 
